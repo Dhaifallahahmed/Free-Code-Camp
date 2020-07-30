@@ -1,16 +1,24 @@
 body {
-    font-family: system-ui;
-    
-    background:black;
-    color: white;
-    text-align: center;
-  }
-  h1{
-    font-size:80px;
-  }
-  p{
-    font-size:19px;
-  }
-  div{
-    text-align:left;
-  }
+  text-align: center;
+  font-family: system-ui;
+  background:black;
+  color: white;
+  
+}
+h1{
+  font-size:45px;
+  background-color:gray; 
+}
+p{
+  font-size:19px;
+  color:white;
+    background-color:gray; 
+}
+#image{
+  height:700px;
+  max-width:100%;
+}
+#img-caption{
+  font-family:'Lobster';
+  font-size:25px;
+}
