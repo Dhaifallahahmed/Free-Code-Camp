@@ -1,0 +1,16 @@
+body {
+    font-family: system-ui;
+    
+    background:black;
+    color: white;
+    text-align: center;
+  }
+  h1{
+    font-size:80px;
+  }
+  p{
+    font-size:19px;
+  }
+  div{
+    text-align:left;
+  }
