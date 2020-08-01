@@ -1,0 +1,60 @@
+#navbar{
+    position:fixed;
+    grid-area:navbar;
+  }
+  #navbar a{
+    display:block;
+    border:1px solid;
+    padding:4px;
+    margin:5px 0;
+    text-decoration:none;
+    color:black;
+  }
+  #main-doc{
+    font-family:monospace;
+    background-color:darkslategrey;
+    grid-area:maincontent;
+    font-size:15px;
+  }
+  #PHP{
+        background-color: darkslategrey;
+    }
+    #Python{
+        background-color: darkturquoise;
+    }
+    #Java{
+        background-color: floralwhite;
+    }
+    #Cplus{
+        background-color: gold;
+    }
+    #Oracle{
+        background-color: grey;
+    }
+  
+  div.main-body{
+    display:grid;
+    grid-template-columns:minmax(150px,auto) 1fr;
+    grid-template-areas:"navbar maincontent";
+    grid-gap:10px;
+      
+  }
+  header{
+    font-size:1.5em;
+    font-weight:bold;
+  }
+  code {
+    background-color:green;
+    display:block;
+    padding:10px;
+  }
+  @media screen and (max-width :750px){
+    div.main-body{
+      grid-template-columns:1fr;
+      grid-template-areas:"navbar" "maincontent";
+      
+    }
+    nav#navbar{
+      position:inherit;
+    }
+  }
