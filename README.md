@@ -1,2 +1,3 @@
 # Free-Code-Camp
-Responsive Web Design Projects.
+collection exercises from freecodecamp.org
+html/css/js
