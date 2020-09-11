@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #17141d;
+    color: wheat;
+}
+.cards-list{
+display: flex;
+padding: 3rem;
+overflow-x: scroll;
+}
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 350px;
+    width:400px ;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 5rem rgb(92, 55, 55);
+    transition: 0.2s;
+}
+.cards-list::-webkit-scrollbar{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(151, 113, 56);
+}
+.cards-list::-webkit-scrollbar-thumb{
+    background-color: rgb(209, 38, 38);
+    border-radius: 10px;
+    box-shadow:inset 200px 200px 200px rgba(83, 77, 77, 0.25),inset -2px -2px 2px  rgb(54, 54, 59);
+}
+.cards-list::-webkit-scrollbar-track{
+background:linear-gradient(90deg,black,rgb(199, 31, 31),20px white 10px,green ) ;
+}
+/* Animation for Cards */
+.card:hover{
+    transform: translateY(-1rem);
+}
+.card:hover~.card{
+transform: translateX(2rem);
+}
+.card:not(:first-child){
+margin-left: -2rem;
+}
+
+/* Person Div */
+.person{
+    position: relative;
+    display: grid;
+    grid-template-columns:75px 1fr;
+    align-items: center;
+    margin: 3rem 0 0;
+}
+.avatar img{
+display: block;
+width: 50px;
+height: 45px;
+border-radius: 50%;
+margin: 15px 25px;
+}
+
+.half-circle{
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+    width: 60px;
+    height: 45px;
+    fill: none;
+    stroke: rgb(171, 207, 40);
+    stroke-width: 10px;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+.name{
+    margin-left: 1rem;
+    font-weight: 700;
+    color: rgb(192, 168, 168);
+}
+
+
+
+
+
+
+
